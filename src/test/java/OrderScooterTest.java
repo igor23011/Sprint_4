@@ -91,8 +91,6 @@ public class OrderScooterTest {
         String textOrder = "Заказ оформлен\n" + "Номер заказа:";
         MatcherAssert.assertThat(actualResult, containsString(textOrder));
         objRentPage.clickOnButtonCheckStatus();
-        System.out.println(actualResult);
-        System.out.println(textOrder);
     }
     @AfterClass
     public static void teardown() {
